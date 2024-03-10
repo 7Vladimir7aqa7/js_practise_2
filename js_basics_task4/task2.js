@@ -9,8 +9,7 @@
 
 const strings = ["String one", "String two", "string three"]
 const string1 = []
-const string2 = []
-const string3 = []
+
 
 for(const string of strings) {
     string1.push(string.toUpperCase())
