@@ -33,7 +33,7 @@
 function calc(num1, num2, operator) {                                                  // тут помiч друга
     if (arguments.length !== 3) {console.log("Error arguments must has a 3")}           
     if (typeof num1 !== 'number' || typeof num2 !== 'number') {console.log("Error num1 and num2 is a number")}
-    if (typeof operator !== 'string' || !['+', '-', '*', '/'].includes(operator)) {console.log("Error 3-rd parament is symbol '+','-','*','/'")}
+    if (typeof operator !== 'string' || !['+', '-', '*', '/'].includes(operator)) {console.log("Error 3-rd parament is symbol '+','-','*','/'")} 
     if (operator === '/' && num2 === 0) {console.log("Error 2-rd operator isn`t '0'")}     
     
     let result;
@@ -49,6 +49,6 @@ function calc(num1, num2, operator) {                                           
     return result;
 }
 console.log('The add is:', calc(100,5, "*"));
-console.log('The delete is:', calc(100,5, "/"));
+console.log('The delete is:', calc(100,5, "-"));
 console.log('The sum is:', calc(100,5, "+"));
 console.log('The minus is:', calc(100,5, "-"));
